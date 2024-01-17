@@ -12,56 +12,73 @@ namespace LeetCodeSolution
         // inPlace Logic with O(1) Space complexity
         private static int[][] SetZeroes(int[][] matrix)
         {
-            var n = matrix.Length;
-            var m = matrix[0].Length;
-            // I am consider the initial row and column as index row col for marking as zero
-            int col0 = 1;
-            for (int i = 0; i < n; i++)
+            int rows = matrix.GetLength(0);
+            int cols = matrix[0].Length;
+
+            // Variables to track whether the first row and first column should be zeroed
+            bool firstRowZero = false;
+            bool firstColZero = false;
+
+            // Check if the first row should be zeroed
+            for (int j = 0; j < cols; ++j)
             {
-                for (int j = 0; j < m; j++)
+                if (matrix[0][j] == 0)
+                {
+                    firstRowZero = true;
+                    break;
+                }
+            }
+
+            // Check if the first column should be zeroed
+            for (int i = 0; i < rows; ++i)
+            {
+                if (matrix[i][0] == 0)
+                {
+                    firstColZero = true;
+                    break;
+                }
+            }
+
+            // Use the first row and first column to mark the zeros
+            for (int i = 1; i < rows; ++i)
+            {
+                for (int j = 1; j < cols; ++j)
                 {
                     if (matrix[i][j] == 0)
                     {
-                        // mark i th rows
                         matrix[i][0] = 0;
-                        // mark j th col
-                        if (j != 0)
-                        {
-                            matrix[0][j] = 0;
-                        }
-                        else
-                        {
-                            col0 = 0;
-                        }
+                        matrix[0][j] = 0;
                     }
                 }
             }
-            for (int i = 1; i < n; i++)
+
+            // Set zeros based on markings
+            for (int i = 1; i < rows; ++i)
             {
-                for (int j = 1; j < m; j++)
+                for (int j = 1; j < cols; ++j)
                 {
-                    if (matrix[i][j] != 0)
+                    if (matrix[i][0] == 0 || matrix[0][j] == 0)
                     {
-                        if (matrix[0][j] == 0 || matrix[i][0] == 0)
-                        {
-                            matrix[i][j] = 0;
-                        }
+                        matrix[i][j] = 0;
                     }
                 }
             }
-            if (matrix[0][0] == 0)
+
+            // Zero the first row if needed
+            if (firstRowZero)
             {
-                //row zero
-                for (int j = 0; j < n; j++)
+                for (int j = 0; j < cols; ++j)
                 {
-                    matrix[j][0] = 0;
+                    matrix[0][j] = 0;
                 }
             }
-            if (col0 == 0)
+
+            // Zero the first column if needed
+            if (firstColZero)
             {
-                for (int i = 0; i < m; i++)
+                for (int i = 0; i < rows; ++i)
                 {
-                    matrix[0][i] = 0;
+                    matrix[i][0] = 0;
                 }
             }
             return matrix;
@@ -111,11 +128,13 @@ namespace LeetCodeSolution
         #endregion
         private static void print(int[][] matrix)
         {
-            for (int row = 0; row < matrix.Length; row++)
+            var n = matrix.Length;
+            var m = matrix[0].Length;
+            for (int row = 0; row < n; row++)
             {
                 Console.Write("[");
 
-                for (int col = 0; col < matrix[row].Length; col++)
+                for (int col = 0; col < m; col++)
                 {
                     Console.Write(matrix[row][col]);
 
@@ -132,13 +151,13 @@ namespace LeetCodeSolution
 
         public static void Run()
         {
-            int[][] matrix = new int[3][];
-            matrix[0] = new int[] { 0, 1, 1, 0 };
-            matrix[1] = new int[] { 3, 0, 5, 2 };
-            matrix[2] = new int[] { 1, 3, 1, 5 };
+            int[][] matrix = new int[1][];
+            matrix[0] = new int[] { 1, 0, 3 };
+            //matrix[1] = new int[] { 3, 0, 5, 2 };
+            //matrix[2] = new int[] { 1, 3, 1, 5 };
             print(matrix);
             Console.WriteLine();
-            var newMatrix = SetZerosUsingHashSet(matrix);
+            var newMatrix = SetZeroes(matrix);
             print(newMatrix);
         }
        
