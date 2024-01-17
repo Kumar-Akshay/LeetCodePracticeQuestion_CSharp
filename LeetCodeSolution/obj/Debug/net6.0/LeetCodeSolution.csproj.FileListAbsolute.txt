@@ -1,0 +1,15 @@
+D:\Tech_Stack\LeetCode Practice\LeetCode_Practice_C#\LeetCodeSolution\LeetCodeSolution\bin\Debug\net6.0\LeetCodeSolution.exe
+D:\Tech_Stack\LeetCode Practice\LeetCode_Practice_C#\LeetCodeSolution\LeetCodeSolution\bin\Debug\net6.0\LeetCodeSolution.deps.json
+D:\Tech_Stack\LeetCode Practice\LeetCode_Practice_C#\LeetCodeSolution\LeetCodeSolution\bin\Debug\net6.0\LeetCodeSolution.runtimeconfig.json
+D:\Tech_Stack\LeetCode Practice\LeetCode_Practice_C#\LeetCodeSolution\LeetCodeSolution\bin\Debug\net6.0\LeetCodeSolution.dll
+D:\Tech_Stack\LeetCode Practice\LeetCode_Practice_C#\LeetCodeSolution\LeetCodeSolution\bin\Debug\net6.0\LeetCodeSolution.pdb
+D:\Tech_Stack\LeetCode Practice\LeetCode_Practice_C#\LeetCodeSolution\LeetCodeSolution\obj\Debug\net6.0\LeetCodeSolution.csproj.AssemblyReference.cache
+D:\Tech_Stack\LeetCode Practice\LeetCode_Practice_C#\LeetCodeSolution\LeetCodeSolution\obj\Debug\net6.0\LeetCodeSolution.GeneratedMSBuildEditorConfig.editorconfig
+D:\Tech_Stack\LeetCode Practice\LeetCode_Practice_C#\LeetCodeSolution\LeetCodeSolution\obj\Debug\net6.0\LeetCodeSolution.AssemblyInfoInputs.cache
+D:\Tech_Stack\LeetCode Practice\LeetCode_Practice_C#\LeetCodeSolution\LeetCodeSolution\obj\Debug\net6.0\LeetCodeSolution.AssemblyInfo.cs
+D:\Tech_Stack\LeetCode Practice\LeetCode_Practice_C#\LeetCodeSolution\LeetCodeSolution\obj\Debug\net6.0\LeetCodeSolution.csproj.CoreCompileInputs.cache
+D:\Tech_Stack\LeetCode Practice\LeetCode_Practice_C#\LeetCodeSolution\LeetCodeSolution\obj\Debug\net6.0\LeetCodeSolution.dll
+D:\Tech_Stack\LeetCode Practice\LeetCode_Practice_C#\LeetCodeSolution\LeetCodeSolution\obj\Debug\net6.0\refint\LeetCodeSolution.dll
+D:\Tech_Stack\LeetCode Practice\LeetCode_Practice_C#\LeetCodeSolution\LeetCodeSolution\obj\Debug\net6.0\LeetCodeSolution.pdb
+D:\Tech_Stack\LeetCode Practice\LeetCode_Practice_C#\LeetCodeSolution\LeetCodeSolution\obj\Debug\net6.0\LeetCodeSolution.genruntimeconfig.cache
+D:\Tech_Stack\LeetCode Practice\LeetCode_Practice_C#\LeetCodeSolution\LeetCodeSolution\obj\Debug\net6.0\ref\LeetCodeSolution.dll
